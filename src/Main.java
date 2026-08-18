@@ -2,20 +2,19 @@ import dao.MessDAO;
 import exception.InvalidAllocationException;
 import exception.InvalidPaymentException;
 import exception.RoomNotAvailableException;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
 import model.*;
 import service.AllocationService;
 import service.FeeBillingService;
 import service.HostelService;
 import util.DBConnection;
 
-import java.sql.SQLException;
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Set;
-
 /**
- * Console entry point for the Grand Horizon Student Hostel Management System.
+ * Console entry point for the soa university Student Hostel Management System.
  */
 public class Main {
 
@@ -41,7 +40,7 @@ public class Main {
                     case 6: analyticsMenu(); break;
                     case 7:
                         running = false;
-                        System.out.println("Thank you for using Grand Horizon Hostel Management System!");
+                        System.out.println("Thank you for using  Soa Student Hostel Management System!");
                         break;
                     default:
                         System.out.println("Invalid choice. Try again.");
@@ -62,14 +61,14 @@ public class Main {
 
     private static void printBanner() {
         System.out.println("+========================================================+");
-        System.out.println("|      GRAND HORIZON STUDENT HOSTEL MANAGEMENT SYSTEM     |");
+        System.out.println("|       Soa Student Hostel Management System     |");
         System.out.println("|      Technology : Java + MySQL + JDBC                   |");
         System.out.println("+========================================================+");
     }
 
     private static void printMenu() {
         System.out.println("\n=========================================================");
-        System.out.println("        *  GRAND HORIZON HOSTEL MANAGEMENT  *");
+        System.out.println("        *  soa university HOSTEL MANAGEMENT  *");
         System.out.println("=========================================================");
         System.out.println("   1. Room Management");
         System.out.println("   2. Student Management");

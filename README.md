@@ -1,4 +1,4 @@
-# 🏠 Grand Horizon Student Hostel Management System
+# 🏠  Soa Student Hostel Management System
 
 > A comprehensive, production-quality console application built with **Java + MySQL + JDBC**, adapted from a Hotel Management System design to manage a **student hostel** — rooms/beds, students, mess orders, and fee billing. Great for demonstrating **OOP** and **SQL/DBMS** skills in interviews.
 
@@ -19,7 +19,7 @@
 
 ## 🎯 Project Overview
 
-**Grand Horizon Student Hostel Management System** lets hostel wardens/admin staff manage:
+**Soa Student Hostel Management System** lets hostel wardens/admin staff manage:
 
 - **Room inventory** (4 types: Single, Double, Triple, Dormitory) with per-bed occupancy tracking
 - **Student profiles** with ID proof, guardian details, course & year

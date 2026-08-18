@@ -5,11 +5,10 @@ import dao.MessDAO;
 import dao.PaymentDAO;
 import exception.InvalidPaymentException;
 import interfaces.Payable;
-import model.*;
-
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
+import model.*;
 
 /**
  * Business logic for hostel fee billing and payment processing.
@@ -51,7 +50,7 @@ public class FeeBillingService implements Payable {
 
         StringBuilder bill = new StringBuilder();
         bill.append("=====================================================================\n");
-        bill.append("               GRAND HORIZON STUDENT HOSTEL\n");
+        bill.append("               SOA UNIVERSITY STUDENT HOSTEL\n");
         bill.append("         123 University Road, Bhubaneswar - 751001\n");
         bill.append("              Tel: +91-674-123-4567\n");
         bill.append("=====================================================================\n");
@@ -91,7 +90,7 @@ public class FeeBillingService implements Payable {
         bill.append(String.format("  Already Paid                              Rs.%,.2f%n", alreadyPaid));
         bill.append(String.format("  BALANCE                                   Rs.%,.2f%n", balance));
         bill.append("=====================================================================\n");
-        bill.append("        Thank you for staying at Grand Horizon Hostel!\n");
+        bill.append("        Thank you for staying at soa Horizon Hostel!\n");
         bill.append("=====================================================================\n");
         return bill.toString();
     }
